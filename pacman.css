@@ -1,0 +1,102 @@
+* {
+     vertical-align: baseline;
+     font-weight: inherit;
+     font-family: inherit;
+     font-size: 100%;
+     padding: 0;
+     margin: 0;
+     border: 0 none;
+     outline: 0;
+}
+
+#container {
+  width: 700px;
+  height: 420px;
+}
+
+#world-container {
+  width: 420px;
+  height: 420px;
+  color: green;
+  display: inline-block;
+}
+
+.world-block, .coin, .empty, .cherry{
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  vertical-align: top
+}
+
+.world-block {
+  background-color: gray;
+}
+
+#score {
+  display: inline-block;
+  vertical-align: top;
+  width: 100px;
+  height: 50px;
+  margin-top: 30px; 
+  margin-left: 30px;
+  padding-top: 15px;
+  font-size: 30px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.coin {
+  background: url("images/coin.png");
+  background-size: cover;
+  background-color: black;
+}
+
+.empty {
+  background-color: black;
+}
+
+.cherry {
+  background: url("images/cherry4.gif");
+  background-size: cover;
+  background-color: black;
+}
+
+#pacman {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background: url("images/pacman.gif");
+  background-size: cover;
+}
+
+.ghost {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background: url("http://media.tumblr.com/71b157eed14b7ed58b0a0f58d3827304/tumblr_inline_n4z26w5mQu1s71nq7.gif");
+  background-size: cover;
+}
+
+.left {
+  -webkit-transform: rotate(180deg);  /* Chrome, Safari 3.1+ */
+  -moz-transform: rotate(180deg);  /* Firefox 3.5-15 */
+  -ms-transform: rotate(180deg);  /* IE 9 */
+  -o-transform: rotate(180deg);  /* Opera 10.50-12.00 */
+  transform: rotate(180deg);
+}
+
+.up {
+  -webkit-transform: rotate(-90deg);  /* Chrome, Safari 3.1+ */
+  -moz-transform: rotate(-90deg);  /* Firefox 3.5-15 */
+  -ms-transform: rotate(-90deg);  /* IE 9 */
+  -o-transform: rotate(-90deg);  /* Opera 10.50-12.00 */
+  transform: rotate(-90deg);
+}
+
+.down {
+  -webkit-transform: rotate(90deg);  /* Chrome, Safari 3.1+ */
+  -moz-transform: rotate(90deg);  /* Firefox 3.5-15 */
+  -ms-transform: rotate(90deg);  /* IE 9 */
+  -o-transform: rotate(90deg);  /* Opera 10.50-12.00 */
+  transform: rotate(90deg);
+}
